@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5f2">
+  <meta name="description" content="Meet NLPBot, a friendly AI chatbot for exploring Python, AI, and NLP.">
+  <title>NLPBot — A little curious</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="NLPBot home">
+        <span class="brand-mark" aria-hidden="true"><span></span></span>
+        <span>nlp<span class="brand-light">bot</span></span>
+      </a>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="#chat">The chat</a>
+        <a href="#about">How it works</a>
+      </nav>
+      <a class="status-pill" href="#chat"><span class="status-dot"></span> Your AI buddy is online</a>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-star">✳</span> A SMALL BOT WITH BIG CURIOSITY</p>
+          <h1 id="hero-title">Big questions.<br><span>Friendly answers.</span></h1>
+          <p class="hero-description">Curious about AI, Python, or how language works? Pull up a chair. We made you a little something to talk to.</p>
+          <a class="hero-cta" href="#chat">Say hello <span aria-hidden="true">↘</span></a>
+          <div class="hero-footnote"><span class="sparkle">✦</span> No sign-up. No API keys. Just good questions.</div>
+        </div>
+
+        <div class="mascot-scene" aria-label="An animated 3D illustration of the NLPBot mascot">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="orbit orbit-three"></div>
+          <div class="float-label label-top"><span class="label-sparkle">✳</span> here to help</div>
+          <div class="float-label label-bottom"><span class="label-dot"></span> thinking cap: on</div>
+          <div class="mascot-shadow"></div>
+          <div class="mascot" aria-hidden="true">
+            <div class="mascot-ear ear-left"></div>
+            <div class="mascot-ear ear-right"></div>
+            <div class="mascot-body">
+              <div class="mascot-gloss"></div>
+              <div class="face-panel">
+                <div class="eyes"><span></span><span></span></div>
+                <div class="cheek cheek-left"></div>
+                <div class="cheek cheek-right"></div>
+                <div class="mouth"></div>
+              </div>
+              <div class="mascot-badge">n<span>.</span></div>
+            </div>
+            <div class="mascot-neck"></div>
+            <div class="mascot-base"></div>
+          </div>
+          <div class="scene-spark spark-a">✦</div>
+          <div class="scene-spark spark-b">✳</div>
+          <div class="scene-spark spark-c">·</div>
+        </div>
+
+        <a class="scroll-cue" href="#chat" aria-label="Scroll to chat"><span></span> A LITTLE FURTHER DOWN</a>
+      </section>
+
+      <section class="chat-section" id="chat" aria-labelledby="chat-title">
+        <div class="chat-intro">
+          <p class="eyebrow">YOUR TURN</p>
+          <h2 id="chat-title">So, what’s on<br>your mind?</h2>
+          <p>Ask away. NLPBot knows a little about a lot—and is always happy to explain.</p>
+          <div class="topic-list" aria-label="Topics you can ask about">
+            <span>AI &amp; NLP</span><span>Python</span><span>Chatbots</span><span>And more</span>
+          </div>
+        </div>
+
+        <div class="chat-card">
+          <div class="chat-card-header">
+            <div class="chat-heading">
+              <div class="mini-mascot" aria-hidden="true"><span></span></div>
+              <div><strong>NLPBot</strong><small><span class="status-dot"></span> Usually replies instantly</small></div>
+            </div>
+            <button class="clear-button" id="clear-chat" type="button" aria-label="Clear conversation" title="Clear conversation">↺</button>
+          </div>
+
+          <div class="messages" id="messages" aria-live="polite" aria-relevant="additions text">
+            <div class="message-row bot-row">
+              <div class="message-avatar" aria-hidden="true">n.</div>
+              <div class="message-content">
+                <span class="message-name">NLPBot <span>JUST NOW</span></span>
+                <div class="bubble bot-bubble">Hey there! I’m NLPBot 👋<br>Pick a prompt below or ask me anything about AI, NLP, or Python.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="suggestions" aria-label="Try asking">
+            <button type="button" class="suggestion">What is NLP?</button>
+            <button type="button" class="suggestion">Tell me a joke</button>
+            <button type="button" class="suggestion">What time is it?</button>
+          </div>
+
+          <form class="composer" id="chat-form">
+            <label class="visually-hidden" for="message-input">Your message</label>
+            <textarea id="message-input" name="message" rows="1" maxlength="1000" placeholder="Type a question..." autocomplete="off" required></textarea>
+            <button class="send-button" type="submit" aria-label="Send message"><span aria-hidden="true">↑</span></button>
+          </form>
+          <div class="composer-hint"><span>↵</span> enter to send <i></i> <span>⇧ ↵</span> new line <span class="char-count" id="char-count">0/1000</span></div>
+        </div>
+      </section>
+
+      <section class="how-section" id="about" aria-labelledby="about-title">
+        <p class="eyebrow">A LITTLE ABOUT THE MAGIC</p>
+        <h2 id="about-title">Clever under the hood.<br><span>Easy to talk to.</span></h2>
+        <div class="steps">
+          <article class="step-card"><span class="step-number">01</span><div class="step-icon">Aa</div><h3>It tidies your words</h3><p>We lowercase, tokenize, and clear away common words to find the heart of your question.</p></article>
+          <article class="step-card"><span class="step-number">02</span><div class="step-icon">✳</div><h3>Finds the closest match</h3><p>TF-IDF and cosine similarity compare your question with the bot’s collection of patterns.</p></article>
+          <article class="step-card"><span class="step-number">03</span><div class="step-icon">☺</div><h3>Replies like a friend</h3><p>It picks a fitting answer, shares the live time or date, or asks you to try another way.</p></article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="brand footer-brand" href="#"><span class="brand-mark" aria-hidden="true"><span></span></span><span>nlp<span class="brand-light">bot</span></span></a>
+      <span>Made with curiosity, Python &amp; a little NLP.</span>
+      <span class="footer-tag">#incodevision</span>
+    </footer>
+  </div>
+  <script src="{{ url_for('static', filename='app.js') }}" defer></script>
+</body>
+</html>

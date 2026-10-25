@@ -1,0 +1,321 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hello", "hi", "hey", "good morning", "good afternoon", "good evening",
+        "howdy", "what's up", "sup", "greetings", "hi there", "hello there"
+      ],
+      "responses": [
+        "Hello! How can I help you today?",
+        "Hi there! What can I do for you?",
+        "Hey! Great to see you. What's on your mind?",
+        "Greetings! How may I assist you?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye", "goodbye", "see you", "see you later", "take care",
+        "farewell", "catch you later", "i'm leaving", "talk to you later", "ttyl"
+      ],
+      "responses": [
+        "Goodbye! Have a wonderful day!",
+        "See you later! Take care!",
+        "Farewell! It was great chatting with you.",
+        "Bye! Come back anytime you have questions."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "thanks", "thank you", "thank you so much", "thanks a lot",
+        "appreciate it", "many thanks", "cheers", "that was helpful", "thx"
+      ],
+      "responses": [
+        "You're welcome! Happy to help.",
+        "Anytime! That's what I'm here for.",
+        "Glad I could help! Let me know if you need anything else.",
+        "No problem at all!"
+      ]
+    },
+    {
+      "tag": "bot_name",
+      "patterns": [
+        "what is your name", "what's your name", "who are you",
+        "tell me your name", "what should i call you", "do you have a name"
+      ],
+      "responses": [
+        "I'm NLPBot, your AI-powered chatbot assistant!",
+        "My name is NLPBot. Nice to meet you!",
+        "You can call me NLPBot — built to help you learn about AI and NLP."
+      ]
+    },
+    {
+      "tag": "capabilities",
+      "patterns": [
+        "what can you do", "what are your capabilities", "how can you help me",
+        "what do you know", "what are you good at", "help me understand what you do",
+        "what features do you have", "what can i ask you"
+      ],
+      "responses": [
+        "I can answer questions about AI, NLP, Python, chatbots, and programming basics. I can also tell jokes, share the current time/date, and have general conversations!",
+        "I'm capable of: explaining AI and NLP concepts, answering Python questions, telling jokes, providing the current time and date, and general small talk.",
+        "Ask me about AI, NLP, Python programming, chatbots, or just say hi! I'm here to help you learn."
+      ]
+    },
+    {
+      "tag": "creator",
+      "patterns": [
+        "who created you", "who made you", "who built you", "who is your creator",
+        "who programmed you", "who developed you", "who is your developer"
+      ],
+      "responses": [
+        "I was created as part of an internship project at IncoVision, focused on AI and NLP basics.",
+        "I'm a project built during an AI/NLP internship at IncoVision. My creator used Python to bring me to life!",
+        "I was developed by an intern at IncoVision as a demonstration of basic NLP techniques."
+      ]
+    },
+    {
+      "tag": "what_is_ai",
+      "patterns": [
+        "what is ai", "what is artificial intelligence", "explain ai",
+        "tell me about ai", "define artificial intelligence", "how does ai work"
+      ],
+      "responses": [
+        "Artificial Intelligence (AI) is the simulation of human intelligence in machines. It enables computers to learn, reason, and solve problems like humans.",
+        "AI stands for Artificial Intelligence — it's a branch of computer science focused on building smart machines that can perform tasks that typically require human intelligence.",
+        "AI is technology that allows machines to mimic human cognitive functions like learning, problem-solving, and decision-making."
+      ]
+    },
+    {
+      "tag": "what_is_nlp",
+      "patterns": [
+        "what is nlp", "what is natural language processing", "explain nlp",
+        "tell me about nlp", "define nlp", "how does nlp work", "what does nlp mean"
+      ],
+      "responses": [
+        "Natural Language Processing (NLP) is a branch of AI that helps computers understand, interpret, and generate human language. It powers chatbots, translators, and voice assistants.",
+        "NLP stands for Natural Language Processing. It bridges the gap between human communication and computer understanding — enabling machines to read and respond to text or speech.",
+        "NLP is the technology behind how computers process human language. It involves tasks like tokenization, sentiment analysis, and text classification."
+      ]
+    },
+    {
+      "tag": "what_is_chatbot",
+      "patterns": [
+        "what is a chatbot", "explain chatbot", "how does a chatbot work",
+        "define chatbot", "tell me about chatbots", "what are chatbots used for"
+      ],
+      "responses": [
+        "A chatbot is a software application designed to simulate conversation with humans. It uses NLP to understand input and generate relevant responses.",
+        "Chatbots are AI programs that can have text or voice conversations with users. They're used in customer service, education, healthcare, and more.",
+        "A chatbot works by processing user input, matching it to known patterns or intents, and returning an appropriate response — just like I'm doing right now!"
+      ]
+    },
+    {
+      "tag": "internship",
+      "patterns": [
+        "what is an internship", "tell me about your internship", "what is incodevision",
+        "what is incodevision internship", "what do you learn in an ai internship",
+        "what is this project about"
+      ],
+      "responses": [
+        "This chatbot is Task 01 of an AI/NLP internship at IncoVision. The goal is to learn the basics of Natural Language Processing by building a functional chatbot from scratch.",
+        "IncoVision is an organization offering internship programs in AI, NLP, and software development. This project demonstrates core NLP concepts in a practical way.",
+        "This internship project covers NLP fundamentals: text preprocessing, intent matching, TF-IDF, and cosine similarity — all implemented in Python."
+      ]
+    },
+    {
+      "tag": "what_is_python",
+      "patterns": [
+        "what is python", "tell me about python", "why use python",
+        "is python good for ai", "python programming language", "explain python"
+      ],
+      "responses": [
+        "Python is a high-level, easy-to-read programming language widely used in AI, data science, web development, and automation. It's the #1 language for machine learning!",
+        "Python is a versatile programming language known for its simple syntax. It has powerful libraries like NumPy, Pandas, scikit-learn, and NLTK that make AI development easy.",
+        "Python is the go-to language for AI and NLP because of its rich ecosystem of libraries, readability, and strong community support."
+      ]
+    },
+    {
+      "tag": "programming_basics",
+      "patterns": [
+        "what is a variable", "what is a function", "what is a loop",
+        "explain programming", "what is coding", "how do i start programming",
+        "what is an algorithm"
+      ],
+      "responses": [
+        "Programming basics include: variables (storing data), functions (reusable code blocks), loops (repeating actions), and conditionals (making decisions). Python is a great language to start with!",
+        "An algorithm is a step-by-step set of instructions to solve a problem. Variables store data, functions group reusable logic, and loops repeat tasks — these are the building blocks of programming.",
+        "To start programming: pick a language (Python is great for beginners!), learn variables, loops, and functions, then build small projects to practice."
+      ]
+    },
+    {
+      "tag": "tokenization",
+      "patterns": [
+        "what is tokenization", "explain tokenization", "what are tokens",
+        "how does tokenization work", "what is word tokenization"
+      ],
+      "responses": [
+        "Tokenization is the process of splitting text into smaller units called tokens — usually words or sentences. For example, 'Hello world' becomes ['Hello', 'world'].",
+        "In NLP, tokenization breaks down a sentence into individual words or subwords. It's the first step in text preprocessing before analysis.",
+        "Tokenization converts raw text into a list of tokens (words). It helps the computer process language word by word rather than as one big string."
+      ]
+    },
+    {
+      "tag": "stopwords",
+      "patterns": [
+        "what are stopwords", "explain stopwords", "what is stopword removal",
+        "why remove stopwords", "what words are stopwords"
+      ],
+      "responses": [
+        "Stopwords are common words like 'the', 'is', 'and', 'a' that carry little meaning. Removing them helps focus on the important words in a sentence.",
+        "In NLP, stopwords are filtered out during preprocessing because they don't add much value to understanding the meaning of text. Examples: 'the', 'in', 'of', 'to'.",
+        "Stopword removal is a preprocessing step that eliminates frequently occurring but low-information words, improving the accuracy of text analysis."
+      ]
+    },
+    {
+      "tag": "tfidf",
+      "patterns": [
+        "what is tfidf", "what is tf-idf", "explain tfidf", "how does tfidf work",
+        "what is term frequency", "what is inverse document frequency"
+      ],
+      "responses": [
+        "TF-IDF stands for Term Frequency-Inverse Document Frequency. It measures how important a word is in a document relative to a collection of documents. High TF-IDF means the word is unique and important.",
+        "TF-IDF is a numerical statistic used in NLP to reflect how relevant a word is. TF counts how often a word appears; IDF reduces the weight of common words across documents.",
+        "TF-IDF helps identify the most meaningful words in text. It's widely used in search engines, text classification, and chatbots like me!"
+      ]
+    },
+    {
+      "tag": "cosine_similarity",
+      "patterns": [
+        "what is cosine similarity", "explain cosine similarity", "how does cosine similarity work",
+        "what is similarity matching", "how do you match text"
+      ],
+      "responses": [
+        "Cosine similarity measures the angle between two text vectors. A score of 1 means identical, 0 means completely different. It's used to find how similar two pieces of text are.",
+        "Cosine similarity is a metric that compares two vectors (text converted to numbers) by measuring the cosine of the angle between them. It's great for matching user input to known questions.",
+        "In this chatbot, cosine similarity compares your input to stored patterns. The closer the score is to 1, the better the match!"
+      ]
+    },
+    {
+      "tag": "machine_learning",
+      "patterns": [
+        "what is machine learning", "explain machine learning", "what is ml",
+        "how does machine learning work", "difference between ai and ml"
+      ],
+      "responses": [
+        "Machine Learning (ML) is a subset of AI where computers learn from data without being explicitly programmed. It finds patterns and makes predictions.",
+        "ML is the science of getting computers to learn automatically from experience. Examples include spam filters, recommendation systems, and image recognition.",
+        "AI is the broad concept of machines being smart; ML is a specific approach where machines learn from data. Deep Learning is a subset of ML using neural networks."
+      ]
+    },
+    {
+      "tag": "weather",
+      "patterns": [
+        "what is the weather", "how is the weather today", "is it raining",
+        "what's the weather like", "tell me about the weather", "weather today"
+      ],
+      "responses": [
+        "I don't have access to live weather data, but you can check weather.com or Google 'weather near me' for real-time updates!",
+        "I wish I could check the weather for you! Try asking Google or a weather app for the latest forecast.",
+        "I can't fetch live weather, but I hope it's sunny wherever you are! ☀️"
+      ]
+    },
+    {
+      "tag": "joke",
+      "patterns": [
+        "tell me a joke", "say something funny", "make me laugh",
+        "do you know any jokes", "joke please", "give me a joke"
+      ],
+      "responses": [
+        "Why do programmers prefer dark mode? Because light attracts bugs! 🐛",
+        "Why did the AI go to school? To improve its neural network! 🤖",
+        "I told my computer I needed a break. Now it won't stop sending me Kit-Kat ads. 😄",
+        "Why is Python the best programming language? Because it doesn't have to deal with Java's class issues! ☕",
+        "What do you call a computer that sings? A Dell! 🎵"
+      ]
+    },
+    {
+      "tag": "time",
+      "patterns": [
+        "what time is it", "tell me the time", "current time",
+        "what's the time", "do you know the time", "time please"
+      ],
+      "responses": [
+        "DYNAMIC_TIME"
+      ]
+    },
+    {
+      "tag": "date",
+      "patterns": [
+        "what is today's date", "what date is it", "tell me the date",
+        "current date", "what day is it today", "what's today's date"
+      ],
+      "responses": [
+        "DYNAMIC_DATE"
+      ]
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "help", "i need help", "can you help me", "what should i ask",
+        "how do i use this", "guide me", "i'm lost", "what topics can i ask about"
+      ],
+      "responses": [
+        "Sure! You can ask me about: AI, NLP, Python, chatbots, machine learning, programming basics, jokes, current time/date, or just have a conversation. Type 'exit' to quit.",
+        "I'm here to help! Try asking: 'What is NLP?', 'Tell me a joke', 'What time is it?', or 'What can you do?'",
+        "Need help? Ask me anything about AI, NLP, Python, or programming. You can also ask for jokes or the current time!"
+      ]
+    },
+    {
+      "tag": "how_are_you",
+      "patterns": [
+        "how are you", "how are you doing", "are you okay", "how do you feel",
+        "how's it going", "you doing well", "how have you been"
+      ],
+      "responses": [
+        "I'm doing great, thanks for asking! I'm always ready to chat. How about you?",
+        "As an AI, I don't have feelings, but I'm running perfectly and ready to help!",
+        "All systems go! I'm functioning at 100%. How can I assist you today?"
+      ]
+    },
+    {
+      "tag": "age",
+      "patterns": [
+        "how old are you", "what is your age", "when were you created",
+        "when were you born", "how long have you existed"
+      ],
+      "responses": [
+        "I was created recently as part of an internship project. In AI terms, I'm brand new!",
+        "Age is just a number, but I was built during an AI/NLP internship. I'm young but eager to learn!",
+        "I don't age like humans do — I was coded into existence for this internship project!"
+      ]
+    },
+    {
+      "tag": "favorite_language",
+      "patterns": [
+        "what is your favorite programming language", "do you like python",
+        "best programming language", "which language do you prefer",
+        "what language are you written in"
+      ],
+      "responses": [
+        "I'm written in Python, and I love it! Python is clean, readable, and perfect for AI and NLP projects.",
+        "Python all the way! It's the language of AI, data science, and automation. Plus, it's beginner-friendly.",
+        "I'm a Python bot through and through! It's the best language for NLP and machine learning."
+      ]
+    },
+    {
+      "tag": "deep_learning",
+      "patterns": [
+        "what is deep learning", "explain deep learning", "what are neural networks",
+        "how do neural networks work", "what is a neural network"
+      ],
+      "responses": [
+        "Deep Learning is a subset of Machine Learning that uses neural networks with many layers to learn from large amounts of data. It powers image recognition, speech recognition, and large language models.",
+        "Neural networks are computing systems inspired by the human brain. Deep learning uses many layers of these networks to automatically learn features from raw data.",
+        "Deep Learning = Machine Learning + many-layered neural networks. It's behind technologies like ChatGPT, image recognition, and self-driving cars."
+      ]
+    }
+  ]
+}
